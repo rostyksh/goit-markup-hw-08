@@ -1,0 +1,35 @@
+
+  .icon__soc-link {
+    width: 44px;
+    height: 44px;
+    /* background-color: tomato; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms var(--timing-function);
+    &:hover ,
+    &:focus {
+      background-color: #2196F3;
+    }
+  
+  }
+  .icon__soc-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
+    .icon__soc-link:hover & ,
+    .icon__soc-link:focus & {
+      fill: #ffffff;
+    } 
+  }
+ 
+ 
+  
+  .icon-soc-list {
+    display: flex;
+    justify-content: center;
+  }
+    .icon__soc-item + .icon__soc-item {
+   margin-left: 10px;
+    }
+    

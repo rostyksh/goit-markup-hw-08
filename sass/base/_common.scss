@@ -1,0 +1,27 @@
+body {
+  background-color:var(--primary-bg-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+address {
+  font-style: normal;
+}
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* заб підкреслення а сlass */
+.link {
+  text-decoration: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+
+

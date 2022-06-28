@@ -1,0 +1,49 @@
+
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-btn {
+  font-family:inherit;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  padding: 6px 22px;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+  box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
+      2px 0px 1px rgba(0, 0, 0, 0.08),
+      1px 0px 3px rgba(0, 0, 0, 0.1);
+  
+}
+}
+
+.portfolio-btn.current-all {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+  
+}
+
+ .portfolio-btn-item {
+  display: block;
+  &:hover,
+  &:focus {
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
+  2px 0px 1px rgba(0, 0, 0, 0.08),
+  1px 0px 3px rgba(0, 0, 0, 0.1);
+} 
+}   

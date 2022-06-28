@@ -1,0 +1,29 @@
+
+ .social-link-footers {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 2555, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms var(--timing-function);
+    &:hover ,
+    &:focus {
+      background-color: #2196F3;
+    }
+  }
+  .social-list-footers {
+    display: flex;  
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .social-icons-footers+.social-icons-footers {
+    margin-left: 10px;
+  }
+  
+  .social-icon-footers {
+    fill: #ffffff;
+  }
+

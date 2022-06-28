@@ -1,0 +1,74 @@
+.list-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.flex-elements {
+  width: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background:var(--primary-bg-color);
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  &:hover .thumb-overlay {
+    transform: translateY(0%);
+  } 
+
+}
+.card-link {
+  display: block; 
+  transition:box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+  box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16),
+  4px 0px 4px rgba(0, 0, 0, 0.06),
+  1px 0px 1px rgba(0, 0, 0, 0.12)
+}
+ }
+
+
+.thumb {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; 
+  &:hover .thumb-overlay,
+  &:focus .thumb-overlay {
+  transform: translateY(0%);
+} 
+}
+.thumb-overlay {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform  250ms var(--timing-function);
+}
+
+
+/* ---спрацьовує при наведені кругом--- */
+
+.text-overlay {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  margin: 0;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+}
+
+.cards-text {
+padding: 20px 24px 20px 24px;
+}
+.project {
+  margin-bottom: 4px;
+}
